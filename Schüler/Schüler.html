@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS Code/Timer.css">
+    <link rel="stylesheet" href="../../CSS Code/Navbar.css">
+    <link rel="stylesheet" href="CSS-Schüler.css">
+
+</head>
+
+<body>
+    <title>Julian Lombardo</title>
+
+    <div class="topnav">
+        <a href="../HomePage/HomePage.html">Home</a>
+        <a href="SchülerPage.html">Schüler/innen</a>
+        <a href="../Lehrer/LehrerPage.html">Lehrer/innen</a>
+        <a href="../Schulhaus/Schulhaus.html">Schulhaus</a>
+        <a href="../Klassenfotos/Klassenfotos.html">Klassenfotos</a>
+        <a id="Countdown">Inactive</a>
+    </div>
+    <div id="SchülerContainer">
+        <div class="header">
+            <img src="" alt="Bild" class="profilbild">
+            <div class="titelbox">
+                <h1 id="MainU"></h1>
+            </div>
+        </div>
+
+        <div id="Infos">
+            <table class="info-table">
+                <tr>
+                    <td>Wohnort</td>
+                    <td id="Wohnort">Giebenach</td>
+                </tr>
+                <tr>
+                    <td>Geburtstag</td>
+                    <td id="Geburtstag">03.06.2009</td>
+                </tr>
+                <tr>
+                    <td>Lieblingsfach</td>
+                    <td id="Lieblingsfach">Mathe</td>
+                </tr>
+                <tr>
+                    <td>Hobbys</td>
+                    <td id="Hobbys">Basketball, Schiri, Programmieren</td>
+                </tr>
+                <tr>
+                    <td>Nach der Sek</td>
+                    <td id="Nach der Sek">Informatiker (Plattformentwicklung)</td>
+                </tr>
+            </table>
+
+            <div class="section">
+                <h3>Besonderes</h3>
+                <ul id="Besonderes">
+                    <li>Weil er immer allen hilft</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Spitznamen</h3>
+                <ul id="Spitznamen">
+                    <li>Julien</li>
+                    <li>Jüliä (Französisch)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Lustige Momente</h3>
+                <ul id="Lustige Momente">
+                    <li>Fakeaccount im Skilager</li>
+                    <li>Wo du Yelisei "gerettet" hast, weil er nicht so gut schwimmen konnte</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>In 10 Jahren</h3>
+                <ul id="In 10 Jahren">
+                    <li>Sekundarschullehrer (Herr Sieber 2.0)</li>
+                    <li>Hinter einem Computer am Programmieren</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const schuelerKey = params.get("name") || "JulianLombardo";
+
+        fetch("./SchülerData.json")
+            .then((response) => response.json())
+            .then((data) => {
+                const schueler = data[schuelerKey];
+                if (!schueler) return;
+                const image = document.querySelector(".profilbild");
+                const title = document.getElementById("MainU");
+                title.textContent = schueler.Name;
+                document.title = schueler.Name;
+                image.src = schueler.Foto;
+                if (!schueler.Foto) {
+                    image.src = "Fotos Schüler/NON.png";
+                }
+                image.alt = `Profilbild von ${schueler.Name || schuelerKey}`;
+
+                const infoFields = ["Wohnort", "Geburtstag", "Lieblingsfach", "Hobbys", "Nach der Sek"];
+                infoFields.forEach((field) => {
+                    const element = document.getElementById(field);
+                    if (element) {
+                        element.textContent = schueler[field] || "Keine Angabe";
+                    }
+                });
+
+                const listFields = ["Besonderes", "Spitznamen", "Lustige Momente", "In 10 Jahren"];
+                listFields.forEach((field) => {
+                    const listElement = document.getElementById(field);
+                    if (listElement) {
+                        listElement.innerHTML = "";
+                        const items = schueler[field] || [];
+                        items.forEach((item) => {
+                            const li = document.createElement("li");
+                            li.textContent = item;
+                            listElement.appendChild(li);
+                        });
+                    }
+                    if (schueler[field] === undefined) {
+                        const section = listElement.closest(".section");
+                        if (section) {
+                            section.style.display = "none";
+                        }
+                    }
+                });
+            })
+            .catch((error) => {
+                console.error("Fehler beim Laden von SchülerData.json:", error);
+            });
+    </script>
+
+    <script>
+        let LocationReplacer = "../index.html"
+    </script>
+    <script src="../../JS Code/Timer.js"></script>
+</body>
+
+</html>

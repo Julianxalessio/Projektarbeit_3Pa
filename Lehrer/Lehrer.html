@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS Code/Timer.css">
+    <link rel="stylesheet" href="../CSS Code/Navbar.css">
+    <link rel="stylesheet" href="CSS-Lehrer.css">
+</head>
+
+<body>
+    <title>Lehrer/in</title>
+
+    <div class="topnav">
+        <a href="../HomePage/HomePage.html">Home</a>
+        <a href="../Schüler/SchülerPage.html">Schüler/innen</a>
+        <a href="LehrerPage.html">Lehrer/innen</a>
+        <a href="../Schulhaus/Schulhaus.html">Schulhaus</a>
+        <a href="../Klassenfotos/Klassenfotos.html">Klassenfotos</a>
+        <a id="Countdown">Inactive</a>
+    </div>
+
+    <div id="SchülerContainer">
+        <div class="header">
+            <img src="Fotos Lehrer/NON.png" alt="Bild" class="profilbild" id="LehrerBild">
+            <div class="titelbox">
+                <h1 id="MainU"></h1>
+            </div>
+        </div>
+
+        <div id="Infos">
+            <table class="info-table">
+                <tr>
+                    <td>Fach in der 3Pa</td>
+                    <td id="FachInDer3Pa">Keine Angabe</td>
+                </tr>
+            </table>
+
+            <div class="section" id="sectionTypisch">
+                <h3>Typisch</h3>
+                <ul id="Typisch"></ul>
+            </div>
+
+            <div class="section" id="sectionBesonderes">
+                <h3>Besonderes</h3>
+                <ul id="Besonderes"></ul>
+            </div>
+
+            <div class="section" id="sectionSpitznamen">
+                <h3>Spitznamen</h3>
+                <ul id="Spitznamen"></ul>
+            </div>
+
+            <div class="section" id="sectionLustigeMomente">
+                <h3>Lustige Momente</h3>
+                <ul id="LustigeMomente"></ul>
+            </div>
+
+            <div class="section" id="sectionAndereBerufe">
+                <h3>Andere Berufe ausser Lehrer</h3>
+                <ul id="AndereBerufe"></ul>
+            </div>
+
+            <div class="section" id="sectionIn10Jahren">
+                <h3>In 10 Jahren</h3>
+                <ul id="In10Jahren"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const lehrerKey = params.get("name") || "PhilipSieber";
+
+        fetch("./LehrerData.json")
+            .then((response) => response.json())
+            .then((data) => {
+                const lehrer = data[lehrerKey];
+                if (!lehrer) return;
+
+                const title = document.getElementById("MainU");
+                const image = document.getElementById("LehrerBild");
+                const fach = document.getElementById("FachInDer3Pa");
+
+                if (title && lehrer.Name) {
+                    title.textContent = lehrer.Name;
+                    document.title = lehrer.Name;
+                }
+
+                if (image) {
+                    image.src = lehrer.Foto || "Fotos Lehrer/NON.png";
+                    image.alt = `Profilbild von ${lehrer.Name || lehrerKey}`;
+                }
+
+                if (fach) {
+                    fach.textContent = lehrer["Fach in der 3Pa"] || "Keine Angabe";
+                }
+
+                function fillList(fieldName, listId, sectionId) {
+                    const listElement = document.getElementById(listId);
+                    const section = document.getElementById(sectionId);
+                    const items = lehrer[fieldName];
+
+                    if (!listElement || !section) return;
+
+                    if (!Array.isArray(items) || items.length === 0) {
+                        section.style.display = "none";
+                        return;
+                    }
+
+                    listElement.innerHTML = "";
+                    items.forEach((item) => {
+                        const li = document.createElement("li");
+                        li.textContent = item;
+                        listElement.appendChild(li);
+                    });
+                }
+
+                fillList("Typisch", "Typisch", "sectionTypisch");
+                fillList("Besonderes", "Besonderes", "sectionBesonderes");
+                fillList("Spitznamen", "Spitznamen", "sectionSpitznamen");
+                fillList("Lustige Momente", "LustigeMomente", "sectionLustigeMomente");
+                fillList("Andere Berufe ausser Lehrer", "AndereBerufe", "sectionAndereBerufe");
+                fillList("In 10 Jahren", "In10Jahren", "sectionIn10Jahren");
+            })
+            .catch((error) => {
+                console.error("Fehler beim Laden von LehrerData.json:", error);
+            });
+    </script>
+
+    <script>
+        let LocationReplacer = "../index.html"
+    </script>
+    <script src="../JS Code/Timer.js"></script>
+</body>
+
+</html>

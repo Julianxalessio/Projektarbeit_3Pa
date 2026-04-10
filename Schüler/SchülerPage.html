@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS Code/Timer.css">
+    <link rel="stylesheet" href="../CSS Code/Timer.css"> 
     <link rel="stylesheet" href="../CSS Code/Navbar.css">
     <style>
         body {
@@ -152,7 +152,7 @@
                 <h3>Nevio <br> Klotz</h3>
             </div>
             <div class="Schüler" id="JulianLombardo" onclick="fensterWechsel(this.id)" data-internal="true">
-                <img src="Fotos Schüler/Passfoto_Julian Lombardo.jpg" alt="Foto">
+                <img src="Fotos Schüler/Julian.jpg" alt="Foto">
                 <h3>Julian <br> Lombardo</h3>
             </div>
             <div class="Schüler" id="NoaMeyer" onclick="fensterWechsel(this.id)" data-internal="true">
@@ -227,7 +227,7 @@
         let LocationReplacer = "../index.html"
 
         function fensterWechsel(id) {
-            window.location.replace("Schüler HTML/" + id + ".html");
+            window.location.replace("Schüler.html?name=" + id);
         }
     </script>
     <script src="../JS Code/Timer.js"></script>

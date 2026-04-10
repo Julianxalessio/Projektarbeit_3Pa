@@ -159,7 +159,7 @@
         let LocationReplacer = "../index.html"
 
         function fensterWechsel(id) {
-            window.location.replace("Lehrer HTML/" + id + ".html");
+            window.location.replace("Lehrer.html?name=" + encodeURIComponent(id));
         }
     </script>
     <script src="../JS Code/Timer.js"></script>

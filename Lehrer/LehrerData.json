@@ -1,0 +1,145 @@
+{
+  "AnnagretJeger": {
+    "Name": "Annagret Jeger",
+    "Fach in der 3Pa": "Zeichnen",
+    "Typisch": ["roter Lippenstift", "hochgesteckte Haare", "Hass auf Deni"],
+    "Lustige Momente": ["Als sie Julian gesagt hat, dass sie sein Bild wirklich hässlich fand.", "Streit mit Deni", "Immer wenn Anouk und Noa geredet haben, war Lenny Schuld"],
+    "In 10 Jahren": ["Modedesignerin"]
+  },
+  "AnneMeier": {
+    "Name": "Anne-Léonie Meier",
+    "Fach in der 3Pa": "Geschichte",
+    "Andere Berufe ausser Lehrer": ["Gärtnerin"]
+  },
+  "ArianaBrahaj": {
+    "Name": "Ariana Brahaj",
+    "Fach in der 3Pa": "Italienisch",
+    "Besonderes": ["Am gleichen Tag Geburtstag wie Julian und Frau Dolbik"],
+    "Andere Berufe ausser Lehrer": ["Ernährungsberaterin"]
+  },
+  "BeatAckermann": {
+    "Name": "Beat Ackermann",
+    "Fach in der 3Pa": "Technisches Gestalten"
+  },
+  "BelindaHolliger": {
+    "Name": "Belinda Holliger",
+    "Foto": "Fotos Lehrer/B_Holliger.jpeg",
+    "Fach in der 3Pa": "Sport",
+    "Besonderes": ["Tolle Sportlehrerin"],
+    "Andere Berufe ausser Lehrer": ["Zahnärztin"]
+  },
+  "ChasperAlbrecht": {
+    "Name": "Chasper Albrecht",
+    "Foto": "Fotos Lehrer/Chasper Albrecht.jpeg",
+    "Fach in der 3Pa": "Technisches Gestalten",
+    "Andere Berufe ausser Lehrer": ["Zoowärter"]
+  },
+  "DanielVolonte": {
+    "Name": "Daniel Volonté",
+    "Foto": "Fotos Lehrer/Volonté.png",
+    "Fach in der 3Pa": "Geografie",
+    "Spitznamen": ["Herr Potato"],
+    "Andere Berufe ausser Lehrer": ["Detailhandel"]
+  },
+  "DavidNeugebauer": {
+    "Name": "David Neugebauer",
+    "Foto": "Fotos Lehrer/David Neugebauer.png",
+    "Fach in der 3Pa": "MINT, Physik",
+    "Besonderes": ["Er macht immer Komplimente", "Er redet immer in der Du-Form"],
+    "Spitznamen": ["Neugi"],
+    "Lustige Momente": ["Rolex", "Jahwoll", "Musterschüler - Marcos"],
+    "Andere Berufe ausser Lehrer": ["Astronaut", "Pflanzenforscher", "Optiker", "Zahnarzt"]
+  },
+  "ErichGlanzmann": {
+    "Name": "Erich Glanzmann",
+    "Foto": "Fotos Lehrer/Glanzmann.png",
+    "Fach in der 3Pa": "MINT"
+  },
+  "JasminGrogg": {
+    "Name": "Jasmin Grogg",
+    "Fach in der 3Pa": "Sport",
+    "Andere Berufe ausser Lehrer": ["MPA (Medizinische Praxisassistentin)"]
+  },
+  "KarinBusch": {
+    "Name": "Karin Busch",
+    "Foto": "Fotos Lehrer/Foto_Frau Busch.jpg",
+    "Fach in der 3Pa": "Englisch, Berufsorientierung",
+    "Besonderes": ["Ist immer sehr motiviert", "Bemüht sich einen abwechslungsreichen Unterricht zu gestalten"],
+    "Andere Berufe ausser Lehrer": ["Zirkusdirektorin", "Fernsehmoderatorin"]
+  },
+  "KathrinRentsch": {
+    "Name": "Kathrin Rentsch",
+    "Foto": "Fotos Lehrer/Rentsch.jpeg",
+    "Fach in der 3Pa": "Hauswirtschaft",
+    "Besonderes": ["Sie bewertet immer grosszügig"],
+    "Lustige Momente": ["Wenn Ela oder Mia Hää gesagt haben"],
+    "Andere Berufe ausser Lehrer": ["Detailhandel"]
+  },
+  "LeaWaldner": {
+    "Name": "Lea Waldner",
+    "Fach in der 3Pa": "Biologie, MI",
+    "Lustige Momente": ["Das Foto, welches Lior bearbeitet hat und dann vom Zeichnenunterricht aus Versehen zu Herr Sieber geschickt hat"],
+    "Andere Berufe ausser Lehrer": ["Meeresbiologin"]
+  },
+  "LiaZapana": {
+    "Name": "Lia Zapana",
+    "Fach in der 3Pa": "Handarbeit"
+  },
+  "MartinaDöring": {
+    "Name": "Martina Döring",
+    "Foto": "Fotos Lehrer/MartinaDöring.png",
+    "Fach in der 3Pa": "Biologie, Chemie",
+    "Besonderes": ["Sie kann gut erklären"],
+    "Lustige Momente": ["Als sie keine Stimme mehr hatte", "Als sie umgefallen ist und ihr Glas mit Stiften dabei kaputt gegangen ist", "Als wir 2 mal 5min Pause hatten, weil sie vergessen hatte, dass wir die erste bereits hatten", "Immer wenn Ela \"Aber\" sagt", "Als Sayan raus musste, weil er getrunken hat"],
+    "Andere Berufe ausser Lehrer": ["Zoologin"]
+  },
+  "NicoleLehmann": {
+    "Name": "Nicole Lehmann",
+    "Fach in der 3Pa": "Sport",
+    "Besonderes": ["Sie hat sich kreative Spiele ausgedacht (auch wenn sich dabei Leute fast verletzt haben)"]
+  },
+  "PhilipSieber": {
+    "Name": "Philip Sieber",
+    "Foto": "Fotos Lehrer/Sieber.JPG",
+    "Fach in der 3Pa": "Deutsch, Französisch, ERG, MI, PA, Klassenlehrer",
+    "Besonderes": ["Bester Klassenlehrer"],
+    "Spitznamen": ["Tarzan", "Sieberli Biberli", "Sippi"],
+    "Lustige Momente": ["Sein böser durchbohrender Blick (ein angsteinflössender Moment)", "Als er in der 7ten seine Haare geöffnet hat", "Seine Icon Poet Beschreibung (eingelocht)", "In der 7ten im Klassenlager, als es sein Zimmer im Fenster gegenüber spiegelte und man sah wie er Fussball schaute", "Als ihm am See die Hose beim Fussballspielen gerissen ist"],
+    "Andere Berufe ausser Lehrer": ["Anwalt"]
+  },
+  "SarahDolbik": {
+    "Name": "Sarah Dolbik",
+    "Foto": "Fotos Lehrer/Sarah Dolbik.jpeg",
+    "Fach in der 3Pa": "Mathematik",
+    "Besonderes": ["(lustige) Lehrerwitze", "Versucht kreative Einstiege in den Unterricht zu machen", "Bemüht sich mit Powerpoints", "Am gleichen Tag Geburtstag wie Julian und Frau Brahaj"],
+    "Spitznamen": ["Frau Emmi-Caffe-Latte"],
+    "Lustige Momente": ["Ich verstehe es nicht = Lehrerschmidtvideos"],
+    "Andere Berufe ausser Lehrer": ["Hotelfachfrau", "Youtuberin"]
+  },
+  "SimoneBeck": {
+    "Name": "Simone Beck",
+    "Fach in der 3Pa": "Geschichte",
+    "Besonderes": ["Sie gab immer viele und ausführliche Lernziele"],
+    "Lustige Momente": ["Dissbattle mit Alex und Deni", "Elas Diskussion"],
+    "Andere Berufe ausser Lehrer": ["Metzgerin", "Bereuerin im Kinderheim"]
+  },
+  "SimonMatiz": {
+    "Name": "Simon Matiz",
+    "Fach in der 3Pa": "Sport, Musik",
+    "Besonderes": ["Les Touristes"],
+    "Andere Berufe ausser Lehrer": ["Musiker"]
+  },
+  "VeraCaggegi": {
+    "Name": "Vera Caggegi",
+    "Fach in der 3Pa": "Handarbeit",
+    "Besonderes": ["Sehr abstrakte Betrachtung", "Sieht Dinge in Bildern, welche andere Leute nicht sehen"],
+    "Spitznamen": ["keinen, weil ihr Name schon genug kompliziert ist"],
+    "Andere Berufe ausser Lehrer": ["Biobäuerin", "Meeresbiologin", "Psychologin", "Kleinkindererzieherin"]
+  },
+  "VictoriaNjoki": {
+    "Name": "Victoria Njoki",
+    "Fach in der 3Pa": "Geografie",
+    "Lustige Momente": ["Wenn man bei einer Präsentation Etwas gesagt hat, was nicht mit Fakten hinterlegt war"],
+    "Andere Berufe ausser Lehrer": ["Apothekerin", "Klimaaktivistin"]
+  }
+}
